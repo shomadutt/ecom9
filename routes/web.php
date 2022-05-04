@@ -27,4 +27,6 @@ require __DIR__.'/auth.php';
 
 Route::match(['get', 'post'],'admin/login', [AdminController::class , 'login']);
 
-Route::get('admin/dashboard', [AdminController::class , 'dashboard']);
+Route::group(['middleware'=>['admin']], function() {
+    Route::get('admin/dashboard', [AdminController::class , 'dashboard']);
+});
