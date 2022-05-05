@@ -35,7 +35,7 @@
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
-        @include('admin.layout.footer')
+        
     </div>
     <!-- container-scroller -->
 
